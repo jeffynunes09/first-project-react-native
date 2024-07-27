@@ -62,7 +62,7 @@ export default function index (){
                 </Text>
              </TouchableOpacity>
              <Modal visible={modalVisible} animationType="fade" transparent={true}>
-                <ModalPassword></ModalPassword>
+                <ModalPassword pass={pass}></ModalPassword>
              </Modal>
              </View>
 
