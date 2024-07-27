@@ -1,5 +1,5 @@
 import Slider from "@react-native-community/slider";
-import { View,Text,StyleSheet,Image, Touchable, Modal } from "react-native";
+import { View,Text,StyleSheet,Image, Modal } from "react-native";
 import { TouchableOpacity } from "react-native-gesture-handler";
 import { useState } from "react";
 import {ModalPassword}  from "../../components/modal/index.jsx"
@@ -62,7 +62,7 @@ export default function index (){
                 </Text>
              </TouchableOpacity>
              <Modal visible={modalVisible} animationType="fade" transparent={true}>
-                <ModalPassword pass={pass}></ModalPassword>
+                <ModalPassword pass={pass} handleClose={() => setModalVisible(false)}></ModalPassword>
              </Modal>
              </View>
 
