@@ -10,7 +10,7 @@ let charset = "abcdefghijklmnopqrstuwyz1234567890ABCDEFGHIJKLMNOPQRSTUWYZ"
 export default function index (){
   
 
-    const [size,setSize] = useState(10)
+    const [size,setSize] = useState<number>(10)
     const [pass, setPass] =useState('')
     const [modalVisible, setModalVisible] =useState(false)
 
@@ -52,7 +52,7 @@ export default function index (){
                 minimumValue={6}
                 maximumValue={20}
                 value={size}
-                onValueChange={(value) => setSize(value.toFixed(0))}
+                onValueChange={(value) => setSize(parseFloat(value.toFixed(0)))}
                 >
 
                 </Slider>
