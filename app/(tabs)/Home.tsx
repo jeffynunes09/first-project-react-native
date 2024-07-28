@@ -7,7 +7,7 @@ import {ModalPassword}  from "../../components/modal/index.jsx"
 
 let charset = "abcdefghijklmnopqrstuwyz1234567890ABCDEFGHIJKLMNOPQRSTUWYZ"
 
-export default function index (){
+export default function Home (){
   
 
     const [size,setSize] = useState<number>(10)
